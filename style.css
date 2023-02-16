@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+body {
+  background-color: antiquewhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Navigation Styles */
+nav {
+  font-family: "Roboto Slab", serif;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  background-color: black;
+  color: white;
+}
+nav ul li {
+  padding: 0 12px;
+}
+.brand img {
+  width: 44px;
+  padding: 0 8px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+/* container */
+.container {
+  min-height: 72vh;
+  background-color: white;
+  color: black;
+
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url("bg.jpg");
+  /* background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto;
+  background-position: center; */
+}
+
+/* bottom */
+.bottom {
+  position: sticky;
+  bottom: 0;
+  height: 130px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#myProgressBar {
+  background-color: brown;
+}
+
+.icons {
+  margin-top: 14px;
+}
+.icons i {
+  cursor: pointer;
+}
+#myProgressBar {
+  width: 80vw;
+  cursor: pointer;
+}
+/* Songs  */
+.songItemContainer {
+  margin-top: 40px;
+}
+
+.songItem {
+  height: 50px;
+  display: flex;
+  background-color: white;
+  width: 120%;
+  color: black;
+  margin: 12px 0px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+.songItem img {
+  margin: 0 23px;
+  width: 43px;
+  border-radius: 24px;
+}
+.timeStamp {
+  margin: 0 23px;
+}
+.songList h1 {
+  text-decoration: underline;
+  text-align: center;
+  margin-left: 70px;
+  color: white;
+}
+.timeStamp i {
+  cursor: pointer;
+}
+/* Bottom */
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: "Roboto Slab", serif;
+}
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
